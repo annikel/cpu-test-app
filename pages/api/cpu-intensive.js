@@ -2,7 +2,9 @@
 export default function handler(req, res) {
   const startTime = Date.now();
   let sum = 0;
-  for (let i = 0; i < 1000000; i++) {
+  
+  // Adjust loop iterations to target around 500 milliseconds
+  for (let i = 0; i < 2000000; i++) {
     sum += Math.sqrt(i);
   }
   const endTime = Date.now();
