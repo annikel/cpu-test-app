@@ -4,7 +4,7 @@ export default function handler(req, res) {
   let sum = 0;
 
   // Adjust loop iterations to target around 500 milliseconds
-  for (let i = 0; i < 20000000; i++) {
+  for (let i = 0; i < 2000000; i++) {
     sum += Math.sqrt(i);
   }
 
