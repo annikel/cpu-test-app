@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   const startTime = Date.now();
-  let sum = 0;
-  
+  let sum = 0;  
+
   let compute = req.query.compute;
   if (compute === 'true') {
     for (let i = 0; i < 20000000; i++) {
