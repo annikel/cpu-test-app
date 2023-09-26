@@ -3,11 +3,11 @@ export default function handler(req, res) {
   let sum = 0;  
 
   let compute = req.query.compute;
-  //if (compute === 'true') {
-   // for (let i = 0; i < 20000000; i++) {
-     // sum += Math.sqrt(i);
-    //}
- // }
+  if (compute === 'true') {
+    for (let i = 0; i < 200; i++) {
+      sum += Math.sqrt(i);
+    }
+  }
 
   const endTime = Date.now();
   const elapsedTime = (endTime - startTime) / 1000;
